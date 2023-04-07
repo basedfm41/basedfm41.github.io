@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>
+    medicamento Nuevo.
+  </title>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body id="contenido">
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>medicamento Nuevo.</h1>
+      <div class="herramientas">
+        <a
+          href="alumnos.html">
+          Cancelar</a>
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Nombre del medicamento:
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Descripción:
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Precio:
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Persona que compró el medicamento:
+        <input name="grupo"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha de compra:
+        <input name="fecha"
+          type="date" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAlumnoNuevo.js">
+    </script>
+</body>
+</html>
+
